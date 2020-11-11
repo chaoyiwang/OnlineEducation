@@ -1,0 +1,17 @@
+package com.education.eduservice.service;
+
+import com.education.eduservice.entity.EduVideo;
+import com.baomidou.mybatisplus.extension.service.IService;
+
+/**
+ * <p>
+ * 课程视频 服务类
+ * </p>
+ *
+ * @author testjava
+ * @since 2020-09-06
+ */
+public interface EduVideoService extends IService<EduVideo> {
+    //根据id删除所有视频
+    void removeVideoByCourseId(String courseId);
+}
